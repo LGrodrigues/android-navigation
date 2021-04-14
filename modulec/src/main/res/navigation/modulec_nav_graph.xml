@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modulec_nav_graph"
+    app:startDestination="@layout/c_fragment">
+
+    <fragment
+        android:id="@+id/fragment_c"
+        android:name="com.tit4nium.modulec.view.FragmentC"
+        tools:layout="@layout/c_fragment">
+        <action
+            android:id="@+id/fragment_c_to_fragment_ca"
+            app:destination="@id/fragment_ca"
+            app:popUpTo="@id/fragment_c" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_ca"
+        android:name="com.tit4nium.modulec.view.FragmentCA"
+        tools:layout="@layout/ca_fragment" />
+</navigation>

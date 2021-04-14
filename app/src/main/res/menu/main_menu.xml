@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragmentA"
+        android:title="@string/fragment_a_title"
+        android:checked="true"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/fragmentB"
+        android:title="@string/fragment_b_title"
+        android:enabled="true" />
+</menu>

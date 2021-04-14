@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMain">
+
+    <include app:graph="@navigation/modulea_nav_graph" />
+    <include app:graph="@navigation/moduleb_nav_graph" />
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.androidnavigation.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.example.androidnavigation.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentA"
+            app:destination="@id/modulea_nav_graph"/>
+
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentB"
+            app:destination="@id/moduleb_nav_graph"/>
+    </fragment>
+
+    <activity
+        android:id="@+id/secondaryActivity"
+        android:name="com.example.androidnavigation.SecondaryActivity"
+        android:label="secondary_activity"
+        tools:layout="@layout/activity_secondary" />
+
+    <!--<fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.androidnavigation.FragmentB"
+        android:label="FragmentB"
+        tools:layout="@layout/fragment_b" />
+
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.androidnavigation.FragmentC"
+        android:label="FragmentC"
+        tools:layout="@layout/fragment_main">
+
+        <argument
+            android:name="categoryId"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>-->
+
+</navigation>
