@@ -7,18 +7,18 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.tit4nium.modulec.R
-import com.tit4nium.modulec.databinding.FragmentCBinding
+import com.tit4nium.modulec.databinding.FragmentCcBinding
 
-class CFragment : Fragment() {
+class CCFragment : Fragment() {
 
-    private lateinit var binding: FragmentCBinding
+    private lateinit var binding: FragmentCcBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentCBinding.inflate(inflater, container, false)
+        binding = FragmentCcBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -28,10 +28,12 @@ class CFragment : Fragment() {
     }
 
     private fun setupVew() = with(binding) {
-        fragmentCTitle.text = getString(R.string.fragment_c_title)
-        fragmentCToFragmentCaButton.run {
-            text = getString(R.string.fragment_c_to_fragment_ca_title)
-            setOnClickListener { findNavController().navigate(R.id.fragment_c_to_fragment_ca) }
+        fragmentCcTitle.text = getString(R.string.fragment_cc_title)
+        fragmentCcToFragmentCdButton.run {
+            text = getString(R.string.fragment_cc_to_fragment_cd_title)
+            setOnClickListener {
+                findNavController().navigate(R.id.fragment_cc_to_fragment_cd)
+            }
         }
     }
 }

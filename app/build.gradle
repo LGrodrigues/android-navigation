@@ -74,6 +74,5 @@ dependencies {
 
     implementation project(':modulea')
     implementation project(':moduleb')
-    implementation project(':modulec')
 
 }

@@ -6,13 +6,13 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/fragment_c_title"
+        android:id="@+id/fragment_cb_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/fragment_c_to_fragment_ca_button"
+        android:id="@+id/fragment_cb_to_fragment_cc_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"/>
