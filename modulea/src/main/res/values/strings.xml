@@ -2,4 +2,5 @@
 <resources>
     <string name="fragment_a_title">Fragment A!</string>
     <string name="fragment_aa_title">Fragment AA!</string>
+    <string name="fragment_a_go_to_aa_">Go to Fragment AA!</string>
 </resources>

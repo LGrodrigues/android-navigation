@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/modulec_nav_graph"
-    app:startDestination="@layout/c_fragment">
+    app:startDestination="@id/fragment_c">
 
     <fragment
         android:id="@+id/fragment_c"
-        android:name="com.tit4nium.modulec.view.FragmentC"
-        tools:layout="@layout/c_fragment">
+        android:name="com.tit4nium.modulec.view.CFragment"
+        tools:layout="@layout/fragment_c">
         <action
             android:id="@+id/fragment_c_to_fragment_ca"
             app:destination="@id/fragment_ca"
@@ -17,6 +17,6 @@
 
     <fragment
         android:id="@+id/fragment_ca"
-        android:name="com.tit4nium.modulec.view.FragmentCA"
-        tools:layout="@layout/ca_fragment" />
+        android:name="com.tit4nium.modulec.view.CAFragment"
+        tools:layout="@layout/fragment_ca" />
 </navigation>

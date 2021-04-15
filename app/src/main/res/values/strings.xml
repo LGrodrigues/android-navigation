@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">AndroidNavigation</string>
 
-    <string name="fragment_a_title">Fragment A</string>
-    <string name="fragment_b_title">Fragment B</string>
+    <string name="fragment_main_title">Fragment Main!</string>
+    <string name="fragment_main_open_modulea_button_text">Módulo A</string>
+    <string name="fragment_main_open_moduleb_button_text">Módulo B</string>
 </resources>
