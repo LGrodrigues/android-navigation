@@ -1,12 +1,12 @@
-package com.tit4nium.modulea.view
+package com.tit4nium.primarycolors.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.tit4nium.modulea.R
-import com.tit4nium.modulea.databinding.FragmentYellowBinding
+import com.tit4nium.primarycolors.R
+import com.tit4nium.primarycolors.databinding.FragmentYellowBinding
 
 class YellowFragment : Fragment() {
 

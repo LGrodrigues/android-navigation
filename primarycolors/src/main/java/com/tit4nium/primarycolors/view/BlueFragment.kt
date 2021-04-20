@@ -1,13 +1,13 @@
-package com.tit4nium.modulea.view
+package com.tit4nium.primarycolors.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.tit4nium.modulea.R
-import com.tit4nium.modulea.databinding.FragmentBlueBinding
+import androidx.navigation.findNavController
+import com.tit4nium.primarycolors.R
+import com.tit4nium.primarycolors.databinding.FragmentBlueBinding
 
 class BlueFragment : Fragment() {
 

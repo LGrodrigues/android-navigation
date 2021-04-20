@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragment_blue"
-        android:name="com.tit4nium.modulea.view.BlueFragment"
+        android:name="com.tit4nium.primarycolors.view.BlueFragment"
         tools:layout="@layout/fragment_blue">
         <action
             android:id="@+id/fragment_blue_to_fragment_red"
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/fragment_red"
-        android:name="com.tit4nium.modulea.view.RedFragment"
+        android:name="com.tit4nium.primarycolors.view.RedFragment"
         tools:layout="@layout/fragment_red">
         <action
             android:id="@+id/fragment_red_to_fragment_yellow"
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/fragment_yellow"
-        android:name="com.tit4nium.modulea.view.YellowFragment"
+        android:name="com.tit4nium.primarycolors.view.YellowFragment"
         tools:layout="@layout/fragment_yellow" />
 
 </navigation>
