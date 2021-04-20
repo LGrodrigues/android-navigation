@@ -1,5 +1,5 @@
 include ':modulec'
-include ':moduleb'
-include ':modulea'
+include ':secondarycolors'
+include ':primarycolors'
 include ':app'
 rootProject.name = "AndroidNavigation"

@@ -5,19 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.tit4nium.modulea.R
-import com.tit4nium.modulea.databinding.FragmentAaBinding
+import com.tit4nium.modulea.databinding.FragmentBlueBinding
 
-class AAFragment : Fragment() {
+class BlueFragment : Fragment() {
 
-    private lateinit var binding: FragmentAaBinding
+    private lateinit var binding: FragmentBlueBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentAaBinding.inflate(inflater, container, false)
+        binding = FragmentBlueBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -27,6 +28,12 @@ class AAFragment : Fragment() {
     }
 
     private fun setupView() = with(binding) {
-        fragmentAaTitle.text = getText(R.string.fragment_aa_title)
+        fragmentBlueTitle.text = getText(R.string.fragment_blue_title)
+        fragmentBlueToFragmentRedButton.run {
+            text = getString(R.string.go_to_fragment_red)
+            setOnClickListener {
+                findNavController().navigate(R.id.fragment_blue_to_fragment_red)
+            }
+        }
     }
 }

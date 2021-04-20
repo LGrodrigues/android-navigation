@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/fragmentA"
-        android:title="@string/fragment_a_title"
+        android:title="@string/fragment_blue_title"
         android:checked="true"
         android:enabled="true"/>
 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/primary_colors_nav_graph"
+    app:startDestination="@id/fragment_blue">
+
+    <fragment
+        android:id="@+id/fragment_blue"
+        android:name="com.tit4nium.modulea.view.BlueFragment"
+        tools:layout="@layout/fragment_blue">
+        <action
+            android:id="@+id/fragment_blue_to_fragment_red"
+            app:destination="@id/fragment_red" />
+        <deepLink
+            android:id="@+id/deep_link_fragment_blue"
+            app:uri="myapp://androidnavigation/modulea_fragment_blue" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_red"
+        android:name="com.tit4nium.modulea.view.RedFragment"
+        tools:layout="@layout/fragment_red">
+        <action
+            android:id="@+id/fragment_red_to_fragment_yellow"
+            app:destination="@id/fragment_yellow" />
+        <deepLink
+            android:id="@+id/deep_link_fragment_aa"
+            app:uri="myapp://androidnavigation/modulea_fragment_aa" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_yellow"
+        android:name="com.tit4nium.modulea.view.YellowFragment"
+        tools:layout="@layout/fragment_yellow" />
+
+</navigation>

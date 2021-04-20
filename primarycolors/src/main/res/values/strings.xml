@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_blue_title">Fragment Blue!</string>
+    <string name="fragment_red_title">Fragment Red!</string>
+    <string name="fragment_yellow_title">Fragment Yellow!</string>
+
+    <string name="go_to_fragment_red">Go to Fragment Red!</string>
+    <string name="go_to_fragment_yellow">Go to Fragment Yellow!</string>
+</resources>

@@ -72,7 +72,7 @@ dependencies {
     implementation "org.koin:koin-android:$koin_version"
     implementation "org.koin:koin-android-viewmodel:$koin_version"
 
-    implementation project(':modulea')
-    implementation project(':moduleb')
+    implementation project(':primarycolors')
+    implementation project(':secondarycolors')
 
 }
