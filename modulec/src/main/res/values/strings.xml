@@ -2,6 +2,7 @@
 <resources>
     <string name="fragment_c_title">Fragment C!</string>
     <string name="fragment_c_to_fragment_ca_title">Go to Fragment CA!</string>
+    <string name="fragment_c_deeplink_to_fragment_cd_title">Deeplink to Fragment CD!</string>
 
     <string name="fragment_ca_title">Fragment CA!</string>
     <string name="fragment_ca_to_fragment_cb_title">Go to Fragment CB!</string>

@@ -1,5 +1,6 @@
 package com.tit4nium.modulec.view
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -32,6 +33,11 @@ class CFragment : Fragment() {
         fragmentCToFragmentCaButton.run {
             text = getString(R.string.fragment_c_to_fragment_ca_title)
             setOnClickListener { findNavController().navigate(R.id.fragment_c_to_fragment_ca) }
+        }
+
+        fragmentCToFragmentCdDeeplinkButton.run {
+            text = getString(R.string.fragment_c_deeplink_to_fragment_cd_title)
+            setOnClickListener { findNavController().navigate(Uri.parse("myapp://androidnavigation/modulec_fragment_cd")) }
         }
     }
 }

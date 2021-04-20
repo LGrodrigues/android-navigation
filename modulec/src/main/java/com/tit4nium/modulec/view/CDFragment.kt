@@ -32,7 +32,7 @@ class CDFragment : Fragment() {
         fragmentCdToFragmentCaButton.run {
             text = getString(R.string.fragment_cd_to_fragment_ca_title)
             setOnClickListener {
-                findNavController().popBackStack(R.id.fragment_ca, true)
+                findNavController().popBackStack(R.id.fragment_ca, false)
             }
         }
     }

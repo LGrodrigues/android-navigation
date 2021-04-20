@@ -4,4 +4,7 @@
     <string name="fragment_main_title">Fragment Main!</string>
     <string name="fragment_main_open_modulea_button_text">Módulo A</string>
     <string name="fragment_main_open_moduleb_button_text">Módulo B</string>
+
+    <string name="main_module_shortcut_short_label">Main module</string>
+    <string name="main_module_shortcut_long_label">Main module</string>
 </resources>

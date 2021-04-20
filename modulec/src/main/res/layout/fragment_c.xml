@@ -17,4 +17,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fragment_c_to_fragment_cd_deeplink_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"/>
+
+
 </androidx.appcompat.widget.LinearLayoutCompat>

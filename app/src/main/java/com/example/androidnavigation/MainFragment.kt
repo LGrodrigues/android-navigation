@@ -1,5 +1,6 @@
 package com.example.androidnavigation
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -41,11 +42,13 @@ class MainFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.fragment_main_open_module_a_button -> findNavController().navigate(
-                MainFragmentDirections.actionFragmentMainToFragmentA()
+                Uri.parse("myapp://androidnavigation/modulea_fragment_a")
             )
+            //Or MainFragmentDirections.actionFragmentMainToFragmentA()
             R.id.fragment_main_open_module_b_button -> findNavController().navigate(
-                MainFragmentDirections.actionFragmentMainToFragmentB()
+                Uri.parse("myapp://androidnavigation/moduleb_fragment_b")
             )
+            //Or MainFragmentDirections.actionFragmentMainToFragmentB()
         }
     }
 }

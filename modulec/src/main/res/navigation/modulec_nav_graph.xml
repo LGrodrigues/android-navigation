@@ -11,49 +11,57 @@
         tools:layout="@layout/fragment_c">
         <action
             android:id="@+id/fragment_c_to_fragment_ca"
-            app:destination="@id/fragment_ca"
-            app:popUpTo="@id/fragment_c" />
+            app:destination="@id/navigation_ca_level" />
     </fragment>
 
-    <fragment
-        android:id="@+id/fragment_ca"
-        android:name="com.tit4nium.modulec.view.CAFragment"
-        tools:layout="@layout/fragment_ca" >
+    <navigation
+        android:id="@+id/navigation_ca_level"
+        app:startDestination="@id/fragment_ca">
 
-        <action
-            android:id="@+id/fragment_ca_to_fragment_cb"
-            app:destination="@id/fragment_cb"
-            app:popUpTo="@id/fragment_c"/>
+        <fragment
+            android:id="@+id/fragment_ca"
+            android:name="com.tit4nium.modulec.view.CAFragment"
+            tools:layout="@layout/fragment_ca">
 
-    </fragment>
+            <action
+                android:id="@+id/fragment_ca_to_fragment_cb"
+                app:destination="@id/fragment_cb" />
 
-    <fragment
-        android:id="@+id/fragment_cb"
-        android:name="com.tit4nium.modulec.view.CBFragment"
-        tools:layout="@layout/fragment_cb">
+        </fragment>
 
-        <action
-            android:id="@+id/fragment_cb_to_fragment_cc"
-            app:destination="@id/fragment_cc"
-            app:popUpTo="@id/fragment_cb"/>
+        <fragment
+            android:id="@+id/fragment_cb"
+            android:name="com.tit4nium.modulec.view.CBFragment"
+            tools:layout="@layout/fragment_cb">
 
-    </fragment>
+            <action
+                android:id="@+id/fragment_cb_to_fragment_cc"
+                app:destination="@id/fragment_cc" />
 
-    <fragment
-        android:id="@+id/fragment_cc"
-        android:name="com.tit4nium.modulec.view.CCFragment"
-        tools:layout="@layout/fragment_cb">
+        </fragment>
 
-        <action
-            android:id="@+id/fragment_cc_to_fragment_cd"
-            app:destination="@id/fragment_cd"
-            app:popUpTo="@id/fragment_ca"
-            app:popUpToInclusive="true"/>
 
-    </fragment>
+        <fragment
+            android:id="@+id/fragment_cc"
+            android:name="com.tit4nium.modulec.view.CCFragment"
+            tools:layout="@layout/fragment_cb">
 
-    <fragment
-        android:id="@+id/fragment_cd"
-        android:name="com.tit4nium.modulec.view.CDFragment"
-        tools:layout="@layout/fragment_cb"/>
+            <action
+                android:id="@+id/fragment_cc_to_fragment_cd"
+                app:destination="@id/fragment_cd" />
+
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_cd"
+            android:name="com.tit4nium.modulec.view.CDFragment"
+            tools:layout="@layout/fragment_cb">
+
+            <deepLink
+                android:id="@+id/deep_link_fragment_cd"
+                app:uri="myapp://androidnavigation/modulec_fragment_cd" />
+
+        </fragment>
+    </navigation>
+
 </navigation>
