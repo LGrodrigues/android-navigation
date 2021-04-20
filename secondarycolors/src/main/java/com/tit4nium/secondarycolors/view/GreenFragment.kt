@@ -31,7 +31,7 @@ class GreenFragment : Fragment() {
         fragmentGreenTitleTextView.text = getString(R.string.fragment_green_title)
         fragmentGreenDescriptionTextView.text = getString(R.string.back_to_orange_description)
         fragmentGreenToModuleGreenButton.run {
-            text = getString(R.string.go_to_fragment_purple_description)
+            text = getString(R.string.go_to_module_green_description)
             setOnClickListener { findNavController().navigate(R.id.fragment_green_to_module_green) }
         }
     }

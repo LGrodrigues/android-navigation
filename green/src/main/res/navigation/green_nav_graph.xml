@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/green_nav_graph"
+    app:startDestination="@id/fragment_light_green">
+
+    <fragment
+        android:id="@+id/fragment_light_green"
+        android:name="com.tit4nium.green.view.LightGreenFragment"
+        tools:layout="@layout/fragment_light_green">
+        <action
+            android:id="@+id/fragment_light_green_to_fragment_normal_green"
+            app:destination="@id/navigation_normal_green_level" />
+    </fragment>
+
+    <navigation
+        android:id="@+id/navigation_normal_green_level"
+        app:startDestination="@id/fragment_normal_green">
+
+        <fragment
+            android:id="@+id/fragment_normal_green"
+            android:name="com.tit4nium.green.view.NormalGreenFragment"
+            tools:layout="@layout/fragment_normal_green">
+
+            <action
+                android:id="@+id/fragment_normal_green_to_fragment_dark_green"
+                app:destination="@id/fragment_dark_green" />
+
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_dark_green"
+            android:name="com.tit4nium.green.view.DarkGreenFragment"
+            tools:layout="@layout/fragment_dark_green" />
+
+    </navigation>
+
+</navigation>

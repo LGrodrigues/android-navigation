@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_light_green_title">Fragment Light Green!</string>
+    <string name="fragment_light_green_to_fragment_normal_green_description">Go to Fragment Normal Green!</string>
+    <string name="fragment_light_green_deeplink_to_fragment_dark_green_description">Deeplink to Fragment CD!</string>
+
+    <string name="fragment_normal_green_title">Fragment Normal Green!</string>
+    <string name="fragment_normal_green_to_fragment_dark_green_description">Go to Fragment Dark Green!</string>
+
+    <string name="fragment_dark_green_title">Fragment Dark Green!</string>
+    <string name="fragment_cb_to_fragment_cc_title">Go to Fragment CC!</string>
+
+    <string name="fragment_cc_title">Fragment CC!</string>
+    <string name="fragment_cc_to_fragment_cd_title">Go to Fragment CD!</string>
+
+    <string name="fragment_cd_title">Fragment CD!</string>
+    <string name="fragment_cd_to_fragment_ca_title">Go back to Fragment CA!</string>
+
+</resources>

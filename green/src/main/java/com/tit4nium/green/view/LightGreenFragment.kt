@@ -1,25 +1,24 @@
-package com.tit4nium.modulec.view
+package com.tit4nium.green.view
 
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.tit4nium.modulec.R
-import com.tit4nium.modulec.databinding.FragmentCBinding
+import com.tit4nium.green.R
+import com.tit4nium.green.databinding.FragmentLightGreenBinding
 
-class CFragment : Fragment() {
+class LightGreenFragment : Fragment() {
 
-    private lateinit var binding: FragmentCBinding
+    private lateinit var binding: FragmentLightGreenBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentCBinding.inflate(inflater, container, false)
+        binding = FragmentLightGreenBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -29,15 +28,15 @@ class CFragment : Fragment() {
     }
 
     private fun setupVew() = with(binding) {
-        fragmentCTitle.text = getString(R.string.fragment_c_title)
-        fragmentCToFragmentCaButton.run {
-            text = getString(R.string.fragment_c_to_fragment_ca_title)
-            setOnClickListener { findNavController().navigate(R.id.fragment_c_to_fragment_ca) }
+        fragmentLightGreenTitle.text = getString(R.string.fragment_light_green_title)
+        fragmentLightGreenToFragmentNormalGreenButton.run {
+            text = getString(R.string.fragment_light_green_to_fragment_normal_green_description)
+            setOnClickListener { findNavController().navigate(R.id.navigation_normal_green_level) }
         }
 
-        fragmentCToFragmentCdDeeplinkButton.run {
+        /*fragmentCToFragmentCdDeeplinkButton.run {
             text = getString(R.string.fragment_c_deeplink_to_fragment_cd_title)
             setOnClickListener { findNavController().navigate(Uri.parse("myapp://androidnavigation/modulec_fragment_cd")) }
-        }
+        }*/
     }
 }

@@ -5,7 +5,7 @@
     android:id="@+id/secondary_colors_nav_graph"
     app:startDestination="@id/fragment_orange">
 
-    <include app:graph="@navigation/modulec_nav_graph" />
+    <include app:graph="@navigation/green_nav_graph" />
 
     <fragment
         android:id="@+id/fragment_orange"
@@ -26,7 +26,7 @@
         <action
             android:id="@+id/fragment_purple_to_fragment_green"
             app:destination="@id/fragment_green"
-            app:popUpTo="@id/fragment_orange"/>
+            app:popUpTo="@id/fragment_orange" />
     </fragment>
 
     <fragment
@@ -35,8 +35,7 @@
         tools:layout="@layout/fragment_green">
         <action
             android:id="@+id/fragment_green_to_module_green"
-            app:destination="@id/modulec_nav_graph"
-            />
+            app:destination="@id/green_nav_graph" />
     </fragment>
 
 </navigation>
