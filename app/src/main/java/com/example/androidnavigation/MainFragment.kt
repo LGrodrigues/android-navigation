@@ -42,11 +42,11 @@ class MainFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.fragment_main_open_module_a_button -> findNavController().navigate(
-                Uri.parse("myapp://androidnavigation/modulea_fragment_blue")
+                Uri.parse("myapp://androidnavigation/primary_colors_fragment_blue")
             )
             //Or MainFragmentDirections.actionFragmentMainToFragmentA()
             R.id.fragment_main_open_module_b_button -> findNavController().navigate(
-                Uri.parse("myapp://androidnavigation/moduleb_fragment_b")
+                Uri.parse("myapp://androidnavigation/secondary_colors_fragment_orange")
             )
             //Or MainFragmentDirections.actionFragmentMainToFragmentB()
         }

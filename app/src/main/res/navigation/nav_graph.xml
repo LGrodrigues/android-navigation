@@ -6,7 +6,7 @@
     app:startDestination="@id/fragmentMain">
 
     <include app:graph="@navigation/primary_colors_nav_graph" />
-    <include app:graph="@navigation/moduleb_nav_graph" />
+    <include app:graph="@navigation/secondary_colors_nav_graph" />
 
     <fragment
         android:id="@+id/fragmentMain"
@@ -20,7 +20,7 @@
 
         <action
             android:id="@+id/action_fragmentMain_to_fragmentB"
-            app:destination="@id/moduleb_nav_graph"/>
+            app:destination="@id/secondary_colors_nav_graph" />
     </fragment>
 
 </navigation>

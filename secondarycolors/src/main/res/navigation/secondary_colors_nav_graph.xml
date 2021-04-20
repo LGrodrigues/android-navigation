@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/secondary_colors_nav_graph"
+    app:startDestination="@id/fragment_orange">
+
+    <include app:graph="@navigation/modulec_nav_graph" />
+
+    <fragment
+        android:id="@+id/fragment_orange"
+        android:name="com.tit4nium.secondarycolors.view.OrangeFragment"
+        tools:layout="@layout/fragment_orange">
+        <action
+            android:id="@+id/fragment_orange_to_fragment_purple"
+            app:destination="@id/fragment_purple" />
+        <deepLink
+            android:id="@+id/deep_link_fragment_orange"
+            app:uri="myapp://androidnavigation/secondary_colors_fragment_orange" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_purple"
+        android:name="com.tit4nium.secondarycolors.view.PurpleFragment"
+        tools:layout="@layout/fragment_purple">
+        <action
+            android:id="@+id/fragment_purple_to_fragment_green"
+            app:destination="@id/fragment_green"
+            app:popUpTo="@id/fragment_orange"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_green"
+        android:name="com.tit4nium.secondarycolors.view.GreenFragment"
+        tools:layout="@layout/fragment_green">
+        <action
+            android:id="@+id/fragment_green_to_module_green"
+            app:destination="@id/modulec_nav_graph"
+            />
+    </fragment>
+
+</navigation>

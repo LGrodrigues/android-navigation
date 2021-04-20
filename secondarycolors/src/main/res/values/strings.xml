@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="fragment_b_title">Fragment B!</string>
-    <string name="fragment_ba_title">Fragment BA!</string>
-    <string name="fragment_b_to_fragment_ba_title">Go to Fragment BA!</string>
-    <string name="fragment_b_to_module_c_title">Go to Module C!</string>
+    <string name="fragment_orange_title">Fragment Orange!</string>
+    <string name="fragment_purple_title">Fragment Purple!</string>
+    <string name="fragment_green_title">Fragment Green!</string>
+
+    <string name="go_to_fragment_purple_description">Go to Fragment Purple!</string>
+    <string name="go_to_fragment_green_description">Go to Fragment Green!</string>
+    <string name="go_to_module_green_description">Go to Module Green!</string>
+    <string name="back_to_orange_description">On back, go to Fragment Orange</string>
+
 </resources>

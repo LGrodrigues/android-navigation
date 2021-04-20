@@ -14,7 +14,7 @@
             app:destination="@id/fragment_red" />
         <deepLink
             android:id="@+id/deep_link_fragment_blue"
-            app:uri="myapp://androidnavigation/modulea_fragment_blue" />
+            app:uri="myapp://androidnavigation/primary_colors_fragment_blue" />
     </fragment>
 
     <fragment
@@ -26,7 +26,7 @@
             app:destination="@id/fragment_yellow" />
         <deepLink
             android:id="@+id/deep_link_fragment_aa"
-            app:uri="myapp://androidnavigation/modulea_fragment_aa" />
+            app:uri="myapp://androidnavigation/primary_colors_fragment_aa" />
     </fragment>
 
     <fragment

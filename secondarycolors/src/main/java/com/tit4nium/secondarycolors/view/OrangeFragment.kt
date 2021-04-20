@@ -1,4 +1,4 @@
-package com.tit4nium.moduleb.view
+package com.tit4nium.secondarycolors.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,19 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.tit4nium.moduleb.R
-import com.tit4nium.moduleb.databinding.FragmentBBinding
+import com.tit4nium.secondarycolors.R
+import com.tit4nium.secondarycolors.databinding.FragmentOrangeBinding
 
-class BFragment : Fragment() {
+class OrangeFragment : Fragment() {
 
-    private lateinit var binding: FragmentBBinding
+    private lateinit var binding: FragmentOrangeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentBBinding.inflate(inflater, container, false)
+        binding = FragmentOrangeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -28,11 +28,11 @@ class BFragment : Fragment() {
     }
 
     private fun setupView() = with(binding) {
-        fragmentBTitle.text = getString(R.string.fragment_b_title)
-        fragmentBToFragmentBaButton.run {
-            text = getString(R.string.fragment_b_to_fragment_ba_title)
+        fragmentOrangeTitleTextView.text = getString(R.string.fragment_orange_title)
+        fragmentOrangeToFragmentPurpleButton.run {
+            text = getString(R.string.go_to_fragment_purple_description)
             setOnClickListener {
-                findNavController().navigate(R.id.fragment_b_to_fragment_ba)
+                findNavController().navigate(R.id.fragment_orange_to_fragment_purple)
             }
         }
     }
