@@ -32,7 +32,12 @@
         <fragment
             android:id="@+id/fragment_dark_green"
             android:name="com.tit4nium.green.view.DarkGreenFragment"
-            tools:layout="@layout/fragment_dark_green" />
+            tools:layout="@layout/fragment_dark_green" >
+
+            <deepLink
+                android:id="@+id/deep_link_fragment_dark_green"
+                app:uri="myapp://androidnavigation/green_fragment_dark_green" />
+        </fragment>
 
     </navigation>
 

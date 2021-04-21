@@ -6,4 +6,7 @@
 
     <string name="go_to_fragment_red">Go to Fragment Red!</string>
     <string name="go_to_fragment_yellow">Go to Fragment Yellow!</string>
+
+    <string name="fragment_blue_arguments_to_fragment_red_hint">Insert string argument for RedFragment</string>
+    <string name="fragment_red_argument_formatter">Argument: %s</string>
 </resources>

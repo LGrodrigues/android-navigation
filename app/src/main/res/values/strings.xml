@@ -2,8 +2,9 @@
     <string name="app_name">AndroidNavigation</string>
 
     <string name="fragment_main_title">Fragment Main!</string>
-    <string name="fragment_main_open_modulea_button_text">Módulo A</string>
-    <string name="fragment_main_open_moduleb_button_text">Módulo B</string>
+    <string name="fragment_main_open_primary_colors_button_text">Primary colors</string>
+    <string name="fragment_main_open_secondary_colors_button_text">Secondary colors</string>
+    <string name="fragment_main_open_normal_green_button_text">Normal Green Fragment</string>
 
     <string name="main_module_shortcut_short_label">Main module</string>
     <string name="main_module_shortcut_long_label">Main module</string>

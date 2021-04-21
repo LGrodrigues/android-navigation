@@ -32,7 +32,8 @@ class BlueFragment : Fragment() {
         fragmentBlueToFragmentRedButton.run {
             text = getString(R.string.go_to_fragment_red)
             setOnClickListener {
-                findNavController().navigate(R.id.fragment_blue_to_fragment_red)
+                val action = BlueFragmentDirections.fragmentBlueToFragmentRed(fragmentBlueArgumentsEditText.text.toString())
+                findNavController().navigate(action)
             }
         }
     }
