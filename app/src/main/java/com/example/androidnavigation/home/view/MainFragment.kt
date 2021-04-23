@@ -1,4 +1,4 @@
-package com.example.androidnavigation
+package com.example.androidnavigation.home.view
 
 import android.net.Uri
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.androidnavigation.R
 import com.example.androidnavigation.databinding.FragmentMainBinding
 
 class MainFragment : Fragment(), View.OnClickListener {

@@ -10,7 +10,7 @@
 
     <fragment
         android:id="@+id/fragmentMain"
-        android:name="com.example.androidnavigation.MainFragment"
+        android:name="com.example.androidnavigation.home.view.MainFragment"
         android:label="MainFragment"
         tools:layout="@layout/fragment_main">
 
