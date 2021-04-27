@@ -72,6 +72,8 @@ dependencies {
     implementation "org.koin:koin-android:$koin_version"
     implementation "org.koin:koin-android-viewmodel:$koin_version"
 
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
     implementation project(':primarycolors')
     implementation project(':secondarycolors')
 
