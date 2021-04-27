@@ -33,10 +33,5 @@ class LightGreenFragment : Fragment() {
             text = getString(R.string.fragment_light_green_to_fragment_normal_green_description)
             setOnClickListener { findNavController().navigate(R.id.navigation_normal_green_level) }
         }
-
-        /*fragmentCToFragmentCdDeeplinkButton.run {
-            text = getString(R.string.fragment_c_deeplink_to_fragment_cd_title)
-            setOnClickListener { findNavController().navigate(Uri.parse("myapp://androidnavigation/modulec_fragment_cd")) }
-        }*/
     }
 }
